@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-con">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин свечей</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container nav">
+                <li>
+                    <a href="#" class="logo">CANDLE-CHOP</a>
+                </li>
+                <li>
+                    <a href="#shop-items">Каталог</a>
+                </li>
+                <li>
+                    <a href="#inspiration">Вдохновение</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <div class="sorting">
+                <select name="sort" id="sort">
+                  <option selected value="alphabet">По алфавиту</option>
+                  <option value="expensive">Сначала дорогие</option>
+                  <option value="cheap">Сначала дешевые</option>
+                </select>
+
+                <div class="site-search">
+                    <input type="search" id="search-input" placeholder="Поиск">
+                    <button type="button" id="search-btn" class="fa fa-search"></i>
+                </div>
+             </div>
+             <div id="shop-items"></div>
+        </section>
+        <p id="nothing-found"></p>
+    </main>
+    <footer id="contacts" class="container">
+      <h2>Свяжитесь с нами</h2>
+      <div class="socials">
+        <a href="https://www.facebook.com/" class="socials__link" aria-label="ссылка на страницу магазина в фейсбуке"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" class="socials__link" aria-label="ссылка на страницу магазина в твитере"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" class="socials__link" aria-label="ссылка на страницу магазина в инстаграме"><i class="fab fa-instagram"></i></a>
+    </div>
+    </footer>
+    <template id="item-template">
+    <div class="shop-item">
+      <img src="">
+      <div class="content">
+        <h2></h2>
+        <span class="price"></span>
+      </div>
+    </div>
+  </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
